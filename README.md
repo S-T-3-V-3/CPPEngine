@@ -19,10 +19,13 @@ I want to be able to cover all of the listed tutorials at [cplusplus.com](https:
 ```
 MyOpenGLProject/
 |-- src/
+|   |-- main.h
 |   |-- main.cpp
 |   |-- shaders/
 |   |-- ...
-|-- include/
+|-- ThirdParty/
+|   |-- ...
+|-- Documentation/
 |   |-- ...
 |-- assets/
 |   |-- ...
