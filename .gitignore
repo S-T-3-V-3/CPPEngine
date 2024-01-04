@@ -1,0 +1,45 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake build directory
+/build/
+
+# Compiled shaders
+*.spv
+
+# macOS-specific
+.DS_Store
+
+# Visual Studio Code specific files
+.vscode/
+
+# CMake specific files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+
+# Custom log files
+*.log
+
+# Dependency directories
+ThirdParty/
