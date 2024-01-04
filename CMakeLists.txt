@@ -2,9 +2,17 @@ cmake_minimum_required(VERSION 3.10)
 
 project(CPPEngine)
 
-# Add source files from subdirectories
-file(GLOB_RECURSE SOURCES "src/*.cpp")
-file(GLOB_RECURSE HEADERS "src/*.h")
+# Include the Source directory
+include_directories(Source)
+
+# Add source files
+file(GLOB_RECURSE SOURCES 
+    "Source/*.cpp"
+    "Source/App.cpp"
+)
+file(GLOB_RECURSE HEADERS
+    "Source/*.h"
+)
 
 # Set build type to Release if not specified
 if(NOT CMAKE_BUILD_TYPE)
@@ -31,5 +39,5 @@ else()
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")  # Optimization level for Release
 endif()
 
-# Copy shaders to build directory
-file(COPY shaders DESTINATION ${CMAKE_BINARY_DIR})
+# Copy Shaders to build directory
+file(COPY Shaders DESTINATION ${CMAKE_BINARY_DIR})

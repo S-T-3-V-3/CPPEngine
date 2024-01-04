@@ -77,10 +77,14 @@ Add any specific settings or configurations for your CPPEngine project in your `
 ```json
 {
     // C++ configuration
-    "C_Cpp.clang_format_sortIncludes": true,
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true,
 
+    // C++ Formatting
+    "C_Cpp.clang_format_sortIncludes": false,
+    "C_Cpp.vcFormat.space.pointerReferenceAlignment": "left",
+    "C_Cpp.formatting": "vcFormat",
+    
     // File and folder settings
     "files.exclude": {
         "**/.git": true,
