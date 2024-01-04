@@ -18,21 +18,27 @@ The roadmap for this project can be found [here](/Documentation/Overview/Roadmap
 - Baseline Performance Metrics
 - Optimization Tracking
 
+For a more detailed list of features, see the [roadmap](/Documentation/Overview/Roadmap.md).
+
 ## Project Structure
 
 ```
-MyOpenGLProject/
-|-- src/
-|   |-- main.h
-|   |-- main.cpp
-|   |-- shaders/
-|   |-- ...
-|-- ThirdParty/
-|   |-- ...
+CPPEngine/
 |-- Documentation/
-|   |-- ...
-|-- assets/
-|   |-- ...
+|   |-- Build/
+|   |-- Engine/
+|   |-- Game/
+|   |-- Overview/
+|   |-- Setup/
+|-- Shaders/
+|-- Source/
+|   |-- Engine/
+|   |   |-- Entities/
+|   |   |-- Framework/
+|   |   |-- Globals/
+|   |   |-- Xtensions/
+|   |-- Game/
+|   |-- ThirdParty/
 |-- CMakeLists.txt
 |-- README.md
 |-- .gitignore
@@ -47,7 +53,7 @@ MyOpenGLProject/
 
 2. Navigate to the project directory:
    ```
-   cd MyOpenGLProject
+   cd CPPEngine
    ```
 
 3. Build the project using CMake:
@@ -60,7 +66,7 @@ MyOpenGLProject/
 
 4. Run the executable:
    ```
-   ./MyOpenGLProject
+   ./CPPEngine
    ```
    
 ## Baseline Test
@@ -69,7 +75,7 @@ Baseline performance metrics will be logged in the `baseline_log.txt` file. This
 
 ## Optimizations
 
-Optimizations will be tracked and documented in the README and through meaningful commit messages. Major milestones will be tagged for easy reference.
+Optimizations will be tracked and documented in [Overview/Optimizations.md](/Documentation/Overview/Optimizations.md) and through meaningful commit messages. Major milestones will be tagged in unique branches for easy reference.
 
 ## Contributing
 
