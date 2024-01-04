@@ -11,9 +11,14 @@ This document outlines the naming conventions adopted for the CPPEngine project 
 The `F` prefix is used for classes related to the engine's core framework or foundational elements. Classes with the `F` prefix represent core functionalities or fundamental building blocks of the CPPEngine.
 
 **Examples:**
-- `FEngine`: Core engine class
-- `FVector`: Vector math class
 - `FString`: String manipulation class
+- `FVector`: Vector math class
+- `FRotator`: Rotation math class
+- `FTransform`: Transformation math class
+- `FMatrix`: Matrix math class
+- `FColor`: Color class
+- `FPrimitive`: Primitive shape class
+- `FCollision`: Collision handling class
 
 ### G - Globals
 
@@ -21,16 +26,26 @@ The `G` prefix is reserved for global variables or singleton instances that prov
 
 **Examples:**
 - `GEngine`: Global engine instance providing engine functionalities
+- `GRenderer`: Global renderer instance providing rendering functionalities
 - `GConfig`: Global configuration manager instance
+- `GLog`: Global logger instance
 
-### E - Entities
+### E - Enumerators
 
-The `E` prefix is used for classes related to entities within the CPPEngine. Entities represent objects or components that exist within the game or simulation environment managed by the engine.
+The `E` prefix is used for enumerators within the CPPEngine. Enumerators are used to define a set of named constants, providing a more readable alternative to integer values.
 
 **Examples:**
-- `EActor`: Entity representing an actor within the game world
-- `EComponent`: Entity representing a component within an actor
-- `EParticleSystem`: Entity representing a particle system within the engine
+- `EPrimitiveType`: Enumerator defining primitive types
+- `EComponentType`: Enumerator defining component types
+
+### N - ENtities
+
+The `N` prefix is used for classes related to entities within the CPPEngine. Entities represent objects or components that exist within the game or simulation environment managed by the engine. All Entities are registered with the engine system when created.
+
+**Examples:**
+- `NActor`: Entity representing an actor within the game world
+- `NComponent`: Entity representing a component within an actor
+- `NParticleSystem`: Entity representing a particle system within the engine
 
 ### I - Interfaces
 
@@ -38,8 +53,7 @@ The `I` prefix is used for interface classes within the CPPEngine. Interfaces de
 
 **Examples:**
 - `IInputHandler`: Interface defining input handling methods
-- `ILogger`: Interface defining logging functionalities
-- `ISystem`: Interface defining system management operations
+- `ICollisionHandler`: Interface defining collision handling methods
 
 ### X - Extensions
 
@@ -48,8 +62,7 @@ The `X` prefix is used for classes that serve as extensions or mixin classes int
 **Examples:**
 - `XTickable`: Extension class providing tick functionality with default implementations
 - `XSerializable`: Extension class providing serialization functionalities
-- `XCollidable`: Extension class providing collision detection and handling methods
 
 ## Conclusion
 
-By adhering to these naming conventions and prefixes (F, G, E, I, X), the CPPEngine project maintains a structured and organized codebase, facilitating readability, maintainability, and scalability as the engine evolves and grows.
+By adhering to these naming conventions and prefixes (F, G, E, N, I, X), the CPPEngine project maintains a structured and organized codebase, facilitating readability, maintainability, and scalability as the engine evolves and grows.
