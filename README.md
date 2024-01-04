@@ -4,7 +4,7 @@
 
 This project aims to create a low-level OpenGL application using C++. The primary goal is to re-familiarize myself with C++ programming and OpenGL rendering techniques. The project will also include setting up baseline tests for performance metrics, and implementing optimizations over time.
 
-I want to be able to cover all of the listed tutorials at `https://cplusplus.com/doc/tutorial/`, implementing them in a meaningful and useful way during this project.
+I want to be able to cover all of the listed tutorials at [cplusplus.com](https://cplusplus.com/doc/tutorial/), implementing them in a meaningful and useful way during this project.
 
 ## Features
 
