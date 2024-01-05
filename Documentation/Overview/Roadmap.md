@@ -60,8 +60,14 @@ This roadmap outlines the planned features for the CPPEngine project.
   - [ ] GEngine
   - [ ] GConfig
   - [ ] GLog
+  - [ ] GEditor (Launches an editor window to modify a given GApp)
+  - [ ] GApp (Per application, we want a config file pointing to its directory, name etc)
+  - [ ] GLauncher (Launches starting window with options to launch Editor or Apps)
 - [ ] Integrate extension classes for dual inheritance
   - [ ] XTickable
+  - [ ] XCollidable
+  - [ ] XRenderable
+  - [ ] XTask (Runs asynchronously on own thread)
 - [ ] Create foundational classes and structures
   - [x] FString
   - [x] FVector
@@ -71,11 +77,13 @@ This roadmap outlines the planned features for the CPPEngine project.
   - [ ] FColor
   - [ ] FMaterial
   - [ ] FPrimitive
+  - [ ] FDelegate
 - [ ] Implement basic physics and collision
   - [ ] FCollision
   - [ ] FCollision2D
 - [ ] Advanced Rendering Techniques (Shaders, Lighting, etc.)
-- [ ] User Interface Development
+- [ ] User Interface Development (NOESIS GUI?)
+- [ ] XTask Manager
 
 ### Entity Development: [Entities](/Documentation/Engine/Entities/README.md)
 - [ ] Define entity classes
@@ -85,8 +93,11 @@ This roadmap outlines the planned features for the CPPEngine project.
   - [ ] NCamera
   - [ ] NLight
   - [ ] NAudio
-- [ ] Implement entity management
+- [ ] Implement entity management on GEngine
+    - [ ] Track all entities and tickable objects (Tree? LinkedList?)
+- [ ] Global physics engine and collision management
 
 ## Game Development: [Game](/Documentation/Game/README.md)
 - [ ] Plugging in game-specific code
 - [ ] Implement game-specific entities
+- [ ] Build release versions of engine to reference from Apps
