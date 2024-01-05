@@ -176,7 +176,12 @@ Copy and paste your tasks configuration into your `.vscode/tasks.json` file to d
       {
         "label": "Clean Build",
         "type": "shell",
-        "command": "rm -rf build",
+        "command":[
+            "rm -rf build &&",
+            "mkdir build &&",
+            "cd build &&",
+            "cmake .."
+        ],
         "group": "build",
         "problemMatcher": []
       }

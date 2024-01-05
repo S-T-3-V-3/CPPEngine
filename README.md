@@ -36,6 +36,7 @@ CPPEngine/
 |   |   |-- Entities/
 |   |   |-- Framework/
 |   |   |-- Globals/
+|   |   |-- Math/
 |   |   |-- Xtensions/
 |   |-- Game/
 |   |-- ThirdParty/
