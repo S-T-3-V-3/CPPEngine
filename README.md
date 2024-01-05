@@ -6,6 +6,9 @@ This project aims to create a low-level OpenGL application using C++. The primar
 
 I want to be able to cover all of the listed tutorials at [cplusplus.com](https://cplusplus.com/doc/tutorial/), implementing them in a meaningful and useful way during this project.
 
+The engine will use prefixed naming conventions for all classes, functions, variables, etc. to avoid any potential naming conflicts with the standard library
+These can be found in the [naming conventions](/Documentation/Overview/NamingConventions.md) document.
+
 ## Roadmap
 
 The roadmap for this project can be found [here](/Documentation/Overview/Roadmap.md).
