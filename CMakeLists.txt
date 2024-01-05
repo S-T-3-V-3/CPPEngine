@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.10)
 
 project(CPPEngine)
 
+# Set C++ standard to C++11
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 # Include the Source directory
 include_directories(Source)
 

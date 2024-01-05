@@ -99,6 +99,10 @@ You can add any specific settings or configurations for your CPPEngine project h
     // C++ Formatting
     "C_Cpp.clang_format_sortIncludes": false,
     "C_Cpp.vcFormat.space.pointerReferenceAlignment": "left",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "newLine",
     "C_Cpp.formatting": "vcFormat",
     
     // File and folder settings

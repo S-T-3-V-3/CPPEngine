@@ -56,18 +56,18 @@ This roadmap outlines the planned features for the CPPEngine project.
 ### Core Engine Development: [Engine](/Documentation/Engine/README.md)
 - [ ] Implement basic OpenGL rendering
   - [ ] GRenderer
-- [-] Implement core engine functionalities
-  - [-] GEngine
+- [ ] Implement core engine functionalities
+  - [ ] GEngine
   - [ ] GConfig
   - [ ] GLog
 - [ ] Integrate extension classes for dual inheritance
   - [ ] XTickable
 - [ ] Create foundational classes and structures
-  - [ ] FString
-  - [ ] FVector
-  - [ ] FRotator
-  - [ ] FTransform
-  - [ ] FMatrix
+  - [x] FString
+  - [x] FVector
+  - [x] FRotator
+  - [x] FTransform
+  - [x] FMatrix
   - [ ] FColor
   - [ ] FMaterial
   - [ ] FPrimitive

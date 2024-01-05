@@ -10,4 +10,4 @@ public:
     bool IsValid();
 };
 
-// Tutorial reading progress: https://cplusplus.com/doc/tutorial/dynamic/
+// Tutorial reading progress: https://cplusplus.com/doc/tutorial/templates/
