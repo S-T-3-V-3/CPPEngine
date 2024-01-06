@@ -46,3 +46,8 @@ endif()
 
 # Copy Shaders to build directory
 file(COPY Shaders DESTINATION ${CMAKE_BINARY_DIR})
+
+# Additional windows compiler flags to disable deprecation warnings
+if(WIN32)
+    add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
+endif()

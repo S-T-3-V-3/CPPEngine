@@ -61,14 +61,14 @@ CPPEngine/
 
 3. Build the project using CMake:
    ```
-   mkdir build
+   cmake -S . -B build
    cd build
-   cmake ..
-   make
+   cmake --build . --config Release
    ```
 
 4. Run the executable:
    ```
+   cd Release
    ./CPPEngine
    ```
    

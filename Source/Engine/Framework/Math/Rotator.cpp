@@ -71,16 +71,16 @@ FRotator FRotator::FromQuaternion(const FQuaternion& Quaternion)
 
 FQuaternion FRotator::ToQuaternion() const
 {
-    float Pitch = FMath::DegreesToRadians(Pitch);
-    float Yaw = FMath::DegreesToRadians(Yaw);
-    float Roll = FMath::DegreesToRadians(Roll);
+    float PitchRadians = FMath::DegreesToRadians(Pitch);
+    float YawRadians = FMath::DegreesToRadians(Yaw);
+    float RollRadians = FMath::DegreesToRadians(Roll);
 
-    float SP = FMath::Sin(Pitch * 0.5f);
-    float CP = FMath::Cos(Pitch * 0.5f);
-    float SY = FMath::Sin(Yaw * 0.5f);
-    float CY = FMath::Cos(Yaw * 0.5f);
-    float SR = FMath::Sin(Roll * 0.5f);
-    float CR = FMath::Cos(Roll * 0.5f);
+    float SP = FMath::Sin(PitchRadians * 0.5f);
+    float CP = FMath::Cos(PitchRadians * 0.5f);
+    float SY = FMath::Sin(YawRadians * 0.5f);
+    float CY = FMath::Cos(YawRadians * 0.5f);
+    float SR = FMath::Sin(RollRadians * 0.5f);
+    float CR = FMath::Cos(RollRadians * 0.5f);
 
     float X = CR * SP * SY - SR * CP * CY;
     float Y = -CR * SP * CY - SR * CP * SY;
