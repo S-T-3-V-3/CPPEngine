@@ -1,6 +1,6 @@
-# CPPEngine Setup Guide for macOS
+# HecateEngine Setup Guide for macOS
 
-This guide will walk you through setting up the required tools and configurations for the CPPEngine project on macOS.
+This guide will walk you through setting up the required tools and configurations for the HecateEngine project on macOS.
 
 ## Table of Contents
 
@@ -43,37 +43,37 @@ brew install cmake
 
 ### Launch Configuration
 
-Copy and paste the following configuration into your `.vscode/launch.json` file to set up the debug and release configurations for CPPEngine:
+Copy and paste the following configuration into your `.vscode/launch.json` file to set up the debug and release configurations for HecateEngine:
 
 ```json
 {
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug CPPEngine",
+      "name": "Debug HecateEngine",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/CPPEngine",
+      "program": "${workspaceFolder}/build/HecateEngine",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "lldb",
-      "preLaunchTask": "Build CPPEngine Debug"
+      "preLaunchTask": "Build HecateEngine Debug"
     },
     {
-      "name": "Release CPPEngine",
+      "name": "Release HecateEngine",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/CPPEngine",
+      "program": "${workspaceFolder}/build/HecateEngine",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "lldb",
-      "preLaunchTask": "Build CPPEngine Release",
+      "preLaunchTask": "Build HecateEngine Release",
       "setupCommands": [
         {
           "description": "Disable Debugging Output",
@@ -88,7 +88,7 @@ Copy and paste the following configuration into your `.vscode/launch.json` file 
 
 ### Settings
 
-You can add any specific settings or configurations for your CPPEngine project here.
+You can add any specific settings or configurations for your HecateEngine project here.
 
 ```json
 {
@@ -130,14 +130,14 @@ You can add any specific settings or configurations for your CPPEngine project h
 
 ### Tasks
 
-Copy and paste your tasks configuration into your `.vscode/tasks.json` file to define the build tasks for your CPPEngine project.
+Copy and paste your tasks configuration into your `.vscode/tasks.json` file to define the build tasks for your HecateEngine project.
 
 ```json
 {
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "Build CPPEngine Debug",
+        "label": "Build HecateEngine Debug",
         "type": "shell",
         "command": "cmake",
         "args": [
@@ -150,7 +150,7 @@ Copy and paste your tasks configuration into your `.vscode/tasks.json` file to d
         "problemMatcher": "$gcc"
       },
       {
-        "label": "Build CPPEngine Release",
+        "label": "Build HecateEngine Release",
         "type": "shell",
         "command": "cmake",
         "args": [
@@ -163,10 +163,10 @@ Copy and paste your tasks configuration into your `.vscode/tasks.json` file to d
         "problemMatcher": "$gcc"
       },
       {
-        "label": "Run CPPEngine",
+        "label": "Run HecateEngine",
         "type": "shell",
-        "command": "./build/CPPEngine",
-        "dependsOn": "Build CPPEngine Debug",
+        "command": "./build/HecateEngine",
+        "dependsOn": "Build HecateEngine Debug",
         "group": {
           "kind": "test",
           "isDefault": true

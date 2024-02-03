@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(CPPEngine)
+project(HecateEngine)
 
 # Set C++ standard to C++11
 set(CMAKE_CXX_STANDARD 11)
@@ -25,13 +25,13 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 # Add executable
-add_executable(CPPEngine ${SOURCES} ${HEADERS})
+add_executable(HecateEngine ${SOURCES} ${HEADERS})
 
 # Find OpenGL package
 find_package(OpenGL REQUIRED)
 
 # Link OpenGL libraries
-target_link_libraries(CPPEngine OpenGL::GL)
+target_link_libraries(HecateEngine OpenGL::GL)
 
 # Compiler flags based on build type
 if(CMAKE_BUILD_TYPE MATCHES Debug)
