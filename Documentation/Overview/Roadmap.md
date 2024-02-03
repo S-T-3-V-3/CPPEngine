@@ -1,8 +1,8 @@
-# CPPEngine Roadmap
+# HecateEngine Roadmap
 
 ## Overview
 
-This roadmap outlines the planned features for the CPPEngine project.
+This roadmap outlines the planned features for the HecateEngine project.
 
 ### Documentation: [Documentation](/Documentation/README.md)
 - [x] Set up project structure

@@ -12,7 +12,7 @@
 
 ### Other Data Types
 
-- **Use Case**: Defining custom data types or structures to represent specific game elements, configurations, or properties within the CPPEngine.
+- **Use Case**: Defining custom data types or structures to represent specific game elements, configurations, or properties within the HecateEngine.
 - **Example**: Creating custom data types like `Vector`, `Matrix`, `Color`, or `Material` to encapsulate and manipulate related properties and functionalities.
 
 ### Special Members

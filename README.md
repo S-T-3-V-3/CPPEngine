@@ -1,4 +1,4 @@
-# OpenGL and C++ Project
+# Hecate Engine - OpenGL and C++ Project
 
 ## Overview
 
@@ -26,7 +26,7 @@ For a more detailed list of features, see the [roadmap](/Documentation/Overview/
 ## Project Structure
 
 ```
-CPPEngine/
+HecateEngine/
 |-- Documentation/
 |   |-- Build/
 |   |-- Engine/
@@ -40,7 +40,7 @@ CPPEngine/
 |   |   |-- Framework/
 |   |   |-- Globals/
 |   |   |-- Xtensions/
-|   |-- Game/
+|   |-- Editor/
 |   |-- ThirdParty/
 |-- CMakeLists.txt
 |-- README.md
@@ -51,12 +51,12 @@ CPPEngine/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/S-T-3-V-3/CPPEngine.git
+   git clone https://github.com/S-T-3-V-3/HecateEngine.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd CPPEngine
+   cd HecateEngine
    ```
 
 3. Build the project using CMake:
@@ -69,7 +69,7 @@ CPPEngine/
 4. Run the executable:
    ```
    cd Release
-   ./CPPEngine
+   ./HecateEngine
    ```
    
 ## Baseline Test
